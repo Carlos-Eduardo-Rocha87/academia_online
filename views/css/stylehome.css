@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+:root {
+  --cor1: #ffffff;
+  --cor2: #000807;
+  --cor3: #9395d3;
+  --cor4: #575abb;
+  --cor5: #ff7f11;
+}
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--cor2);
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Cabin', sans-serif;
+  }
+  
+  .header {
+    background-color: var(--cor2);
+    color: var(--cor1);
+    padding: 20px 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .logo img {
+    height: auto;
+    width: 100px;
+    border-radius: 10px;
+    max-width: 150px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar ul li {
+    display: inline;
+  }
+  
+  .navbar ul li a {
+    color: var(--cor1);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 20px;
+  }
+  
+  .navbar ul li a:hover {
+    
+    color: var(--cor1); 
+  }
+
+  .navbar ul li::after {
+    content: "";
+    display: grid;
+    background-color: var(--cor1);
+    width: 0px;
+    height: 4px;
+  }
+
+  .navbar .icones:hover::after{
+    transition: 0.3s;
+    background-color: var(--cor5);
+    width: 100%;
+    height: 4px;
+  }
+
+  #registerForm {
+    display: grid;
+    width: 400px;
+    margin: auto;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+  fieldset{
+    height: min-content;
+    width: min-content;
+    margin: auto;
+    border-radius: 8px;
+    border-color: var(--cor2);
+  }
+  #treino{
+    margin: 4px;
+  }
+  #registerForm p {
+    display: grid;
+    width: 90%;
+  }
+  #registerForm input {
+    border: none;
+    background: none;
+    border-bottom: 2px solid var(--cor2);
+    outline: none;
+    padding: 5px;
+  }
+
+  #registerForm button{
+    border-radius: 20px;
+    border: none;
+    width: 80%;
+    height: 30px;
+    transition: 0.3s;
+  }
+  #registerForm button:hover{
+    transform: scale(1.1);
+    background-color: var(--cor4);
+  }
+  #registerForm button:active{
+    transform: scale(1);
+    background-color: var(--cor5);
+  }
+  #registerForm select {
+    border: none;
+    width: 80%;
+    height: 30px;
+    border-radius: 20px;
+    outline: none;
+  }
+  #registerForm select:active{
+    transition: 0.3s;
+  }
+  #arc_foto{
+    display: grid;
+}
+
+  .principal{
+    margin: auto;
+    padding: 100px;
+    background-color: var(--cor3);
+    text-align: center;
+    min-height:60vh;
+  }
+  details{
+    max-width: 800px;
+    box-sizing: border-box;
+    margin: auto;
+  }
+  summary{
+    color: var(--cor4);
+    margin: 50px 0px;
+    padding: 10px;
+  }
+  summary:focus::after{
+    background-color: var(--cor4);
+    border-radius: 5px;
+    animation-delay: 1s;
+    font-size: xx-large;
+    color: var(--cor1);
+  }
+  details>table{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  tr:hover{
+     background-color: var(--cor5);
+     color: var(--cor2);
+  }
+  .btn{
+    margin: auto;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: var(--cor4);
+    color: var(--cor1);
+    min-width: 40px;
+  }
+  a{
+    text-decoration: none;
+    color: var(--cor1);
+  }
+   .icones:hover{
+    background-color: var(--cor3);
+    color: var(--cor2);
+  }
+  .btn:hover{
+    background-color: var(--cor2);
+    color: var(--cor2);
+  }
+  td{
+    margin: 0px 20px;
+    padding: 10px;
+    min-width: 150px;
+  }
+  tr{
+    text-align: left;
+    margin: auto;
+    min-width: 400px;
+    max-width: 800px;
+  }
+  .imgUser{
+    width: 100px;
+    height: 100px;
+    border-radius: 50% ;
+  }
+  .custom-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.custom-list li {
+    background: #007bff;
+    color: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.custom-list li:hover {
+    background: #0056b3;
+}
+ 

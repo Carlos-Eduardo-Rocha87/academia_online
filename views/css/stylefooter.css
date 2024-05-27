@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+:root {
+  --cor1: #ffffff;
+  --cor2: #000807;
+  --cor3: #9395d3;
+  --cor4: #575abb;
+  --cor5: #ff7f11;
+}
+.footer {
+    background-color: var(--cor2);
+    color: var(--cor1);
+    padding: 20px 0;
+    flex: 1;
+    padding: 20px;
+    margin-top: auto;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+}
+
+.footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: var(--cor5);
+}
+
+.footer-section p, .footer-section ul {
+    font-size: 16px;
+    color: var(--cor1);
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    color: var(--cor1);
+}
+
+.footer-section ul li a {
+    color: var(--cor1);
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: var(--cor5);
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a img {
+    width: 30px;
+    background-color: var(--cor2);
+    height: 30px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid var(--cor2);
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
